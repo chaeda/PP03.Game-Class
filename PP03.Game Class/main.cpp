@@ -15,7 +15,7 @@ while (g_game->running())
 	g_game->update();
 	g_game->render();
 }
-SDL_Delay(200000);
+
 g_game->clean();
 return 0;
 	}

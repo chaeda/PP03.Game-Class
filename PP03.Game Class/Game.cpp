@@ -17,11 +17,13 @@ bool Game::init(const char* title, int xpos, int ypos,
 	else {
 		return false; // sdl could not initialize
 	}
+	m_bRunning = true;
 	return true;
 }
 
 void Game::render()
 {
+	SDL_SetRenderDrawColor(m_pRenderer, 0, 120, 230, 255);
 	SDL_RenderClear(m_pRenderer);
 	SDL_RenderPresent(m_pRenderer);
 }
